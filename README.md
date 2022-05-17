@@ -36,7 +36,7 @@ To access the **application files**, please see my [Github Repository](https://g
 
   * On Visual Studio Code:
       * Open the cloned file. 
-      * Create your  `.gitignore` and `.env` file.
+      * Create your  `.gitignore` and `.env` files.
       * Check the dependencies and dev dependencies needed on `package.json`. 
 
   * [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages are needed to connect the Express.js API to a MySQL database, and the [dotenv](https://www.npmjs.com/package/dotenv) package to use environment variables to store sensitive data.
@@ -163,11 +163,11 @@ With the manager of an internet retail company in mind as an end-user, this appl
   ## Credits 📌
   The following applications and resources were consulted and/or utilized in the development of this application:
   
-  * UCI Boot Camp study materials and internet resources.
-  * [MongoDB Documentation](https://www.mongodb.com/docs/manual/reference/connection-string/)
+  * UCI Boot Camp study materials, videos, and other resources on Object-Relational Mapping (ORM)and MySQL.
+  * [mySQL](https://dev.mysql.com/doc/)
+  * [npmjs.com](https://npmjs.com) packages and documentation on MySQL2, Sequelize, Nodemon, Express.js, and dotenv.
   * [Insomnia](https://insomnia.rest/)
-  * [How to Install MongoDB on Mac by MammothInteractive](https://www.youtube.com/watch?v=4crXgQZG4W8&t=40s)
-
+ 
   ---
   ## Author 📌
   Jane Tiglao
