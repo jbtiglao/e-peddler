@@ -152,7 +152,7 @@ With the manager of an internet retail company in mind as an end-user, this appl
         * `GET One Product` - a single product; and
         * `GET tag by id` - a single tag.
 
-  3. The following routes are tested to return:
+  3. The following routes are tested to do the following:
         * `POST` - `CREATE Category`;
         * `PUT` - `UPDATE Category`; and
         * `DELETE` - `DELETE Category`.
