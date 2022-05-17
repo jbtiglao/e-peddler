@@ -4,6 +4,8 @@ Unit 13,  Object-Relational Mapping (ORM) E-Commerce Back End Assignment
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+[This is a working draft - assignment not yet submitted]
+
 ## Description 📌
 
 A command-line e-commerce application that utilizes object-relational mapping (ORM). The back end starter code is modified, and the working Express.js API is configured to use Sequelize to interact with a MySQL database.
@@ -152,7 +154,7 @@ With the manager of an internet retail company in mind as an end-user, this appl
         * `GET One Product` - a single product; and
         * `GET tag by id` - a single tag.
 
-  3. The following routes are tested to do the following:
+  3. These routes are tested to do the following:
         * `POST` - `CREATE Category`;
         * `PUT` - `UPDATE Category`; and
         * `DELETE` - `DELETE Category`.
