@@ -8,7 +8,9 @@ Unit 13,  Object-Relational Mapping (ORM) E-Commerce Back End Assignment
 
 ## Description 📌
 
-A command-line e-commerce application that utilizes object-relational mapping (ORM). The back end starter code is modified, and the working Express.js API is configured to use Sequelize to interact with a MySQL database.
+With the manager of an internet retail company in mind as an end-user, this application was developed as a back end for an e-commerce website that uses the latest technologies, which enables the user to compete with other e-commerce companies.
+
+Using object-relational mapping (ORM), this command-line e-commerce application has a back end starter code that is modified, while its working Express.js API is configured to use Sequelize as the ORM that interacts with the MySQL database. The MySQL database consists of tables for categories, products, tags, and product tags. RESTful API routes are used to make requests and updates from the database. Insomnia is used to test the routes and functionalities of the application.
 
 The command-line application has the following **appearance**:
 [image]
@@ -19,7 +21,7 @@ To access the **application files**, please see my [Github Repository](https://g
 
 ---
 
- ## Table of Contents 📌
+## Table of Contents 📌
   1. [Title](#title)
   2. [Description](#description)
   3. [Installation](#installation)
@@ -33,7 +35,7 @@ To access the **application files**, please see my [Github Repository](https://g
   11. [Questions](#questions)
   
   ---
-  ## Installation 📌
+## Installation 📌
   * Clone my repository on GitHub.
 
   * On Visual Studio Code:
@@ -94,17 +96,17 @@ To access the **application files**, please see my [Github Repository](https://g
         * `tag_id`
 
 
-  * Enter `npm run seed` to seed the database.
+* Enter `npm run seed` to seed the database.
   
-  * To invoke the application, run `npm start`. Your Sequelize models should sync to the MySQL database on server start.
+* To invoke the application, run `npm start`. Your Sequelize models should sync to the MySQL database on server start.
 
-  * To test the application, use Insomnia (please see the Test section).
+* To test the application, use Insomnia (please see the Test section).
 
   
   ---
-  ## Usage 📌
+## Usage 📌
 
-With the manager of an internet retail company in mind as an end-user, this application was developed as a back end for an e-commerce website that uses the latest technologies, which enables the user to compete with other e-commerce companies.
+For instructions on how to use the application, please see the demonstration video, as well as the description and features and functionalities sections.
 
 ### Features and Functionalities  🔌
 
@@ -119,7 +121,7 @@ With the manager of an internet retail company in mind as an end-user, this appl
   5. When the  user tests API POST, PUT, and DELETE routes in Insomnia, the user is able to successfully create, update, and delete data in the database.
 
 --- 
- ## Technologies 📌
+## Technologies 📌
   * JavaScript
   * MySQL/MySQL2
   * Sequelize
@@ -129,18 +131,44 @@ With the manager of an internet retail company in mind as an end-user, this appl
   * Insomnia
 
   ---
-  ## License 📌
+ ## License 📌
   License used for this project - MIT
   
   For more information on the above license, please see the [Open Source Initiative](https://opensource.org/licenses).
 
 
   ---
-  ## Contributing 📌
+## Contributing 📌
   To contribute to this application, please email the author for guidelines.
 
   ---
-  ## Tests 📌
+## Tests 📌
+
+  The following procedures are done  during development:
+
+### Starter Code 
+
+ The API Routes to Perform RESTful CRUD Operations are filled out. This includes the unfinished routes in `product-routes.js`, `tag-routes.js`, and `category-routes.js` to perform create, read, update, and delete operations using your Sequelize models.
+
+### Seeding the Database
+
+After creating the models and routes, `npm run seed` is invoked to seed data so the routes can be tested.
+
+### Sync Sequelize to the Database on Server Start
+
+Create the code needed in `server.js` to sync the Sequelize models to the MySQL database on server start.
+
+### Associations
+  
+  1. Association methods on the Sequelize models are executed to create the following relationships between them:
+
+        * `Product` belongs to `Category`, and `Category` has many `Product` models, as a category can have multiple products but a product can only belong to one category.
+
+        * `Product` belongs to many `Tag` models, and `Tag` belongs to many `Product` models. Allow products to have multiple tags and tags to have many products by using the `ProductTag` through model.
+
+  2. Foreign key relationships that match the column created in the respective models are set up.
+
+### Insomnia and Testing RESTful API Routes
 
   Insomnia is used to test the application's `GET`, `POST`, `PUT`, and `DELETE` routes.  Please see the walk-through demonstration videos as well as the sections on Description and Usage to see how the routes and data are tested using Insomnia. 
   
@@ -159,7 +187,7 @@ With the manager of an internet retail company in mind as an end-user, this appl
         * `PUT` - `UPDATE Category`; and
         * `DELETE` - `DELETE Category`.
         
-  4. `POST`, `PUT`, and `DELETE` routes for products and tags are also tested. 
+  4. `POST`, `PUT`, and `DELETE` routes for products and tags are also tested.
 
   ---
   ## Credits 📌
