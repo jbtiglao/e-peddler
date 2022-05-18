@@ -144,7 +144,7 @@ For instructions on how to use the application, please see the demonstration vid
   ---
 ## Tests 📌
 
-  The following procedures are done  during development:
+  The following procedures are done to develop and test the application and its functionalities:
 
 ### Starter Code 
 
@@ -156,7 +156,7 @@ After creating the models and routes, `npm run seed` is invoked to seed data so 
 
 ### Sync Sequelize to the Database on Server Start
 
-Create the code needed in `server.js` to sync the Sequelize models to the MySQL database on server start.
+The code needed in `server.js` to sync the Sequelize models to the MySQL database on server start is created.
 
 ### Associations
   
