@@ -8,14 +8,20 @@ Unit 13,  Object-Relational Mapping (ORM) E-Commerce Back End Assignment
 
 ## Description 📌
 
+The goal of this project is to understand the fundamental structure of **e-commerce** platforms. E-commerce, otherwise known as internet retail, is the largest sector of the electronics insdustry, generating an estimated $29 trillion in 2019. E-commerce platforms like Shopify and WooCommerce provide a suite of services to businesses of all sizes. 
+
 With the manager of an internet retail company in mind as an end-user, this application was developed as a back end for an e-commerce website that uses the latest technologies, which enables the user to compete with other e-commerce companies.
 
-Using object-relational mapping (ORM), this command-line e-commerce application has a back end starter code that is modified, while its working Express.js API is configured to use Sequelize as the ORM that interacts with the MySQL database. The MySQL database consists of tables for categories, products, tags, and product tags. RESTful API routes are used to make requests and updates from the database. Insomnia is used to test the routes and functionalities of the application.
+Using object-relational mapping (ORM), this command-line e-commerce application has a back end starter code that is modified, while its working Express.js API is configured to use [Sequelize](https://sequelize.org/docs/v6/other-topics/upgrade/) as the ORM that interacts with the MySQL database. 
+
+The MySQL database consists of tables for categories, products, tags, and product tags. RESTful API routes point to each standard [Create, Read, Update, and Delete (CRUD)](https://www.codecademy.com/article/what-is-crud) operations for each data group to make the requests and updates from the database, and establish associations between the entities. 
+
+Insomnia is used to test the routes and functionalities of the application.
 
 The command-line application has the following **appearance**:
 [image]
 
-A **walk-through demonstration video** can be accessed [here](link).
+To show the features and functionalities of the application, a **walk-through demonstration video** can be accessed [here](link).
 
 To access the **application files**, please see my [Github Repository](https://github.com/jbtiglao/e-peddler).
 
@@ -193,8 +199,12 @@ The code needed in `server.js` to sync the Sequelize models to the MySQL databas
   ## Credits 📌
   The following applications and resources were consulted and/or utilized in the development of this application:
   
-  * UCI Boot Camp study materials, videos, and other resources on Object-Relational Mapping (ORM)and MySQL.
-  * [mySQL](https://dev.mysql.com/doc/)
+  * UCI Boot Camp study materials, videos, and other resources on Object-Relational Mapping (ORM) and MySQL.
+  * Jeff Howell and Mike Scharf for the assignment walk-through videos. *(They are a big help, thank you!)*
+  * [MySQL](https://dev.mysql.com/doc/)
+  * [Sequelize](https://sequelize.org/docs/v6/category/core-concepts/)
+  * [MySQL Workbench](https://www.mysql.com/products/workbench/)
+  * [Codecademy](https://www.codecademy.com/article/what-is-crud)
   * [npmjs.com](https://npmjs.com) packages and documentation on MySQL2, Sequelize, Nodemon, Express.js, and dotenv.
   * [Insomnia](https://insomnia.rest/)
  
