@@ -14,8 +14,6 @@ With the manager of an internet retail company in mind as an end-user, this appl
 
 Using object-relational mapping (ORM), this command-line e-commerce application has a back end starter code that is modified. Meanwhile, its working Express.js API is configured to use Sequelize as the ORM that interacts with the MySQL database. The MySQL database consists of tables for categories, products, tags, and product tags. RESTful API routes point to each standard Create, Read, Update, and Delete (CRUD) operation to make requests to and updates from the database.
 
-MySQL Workbench is used to ... while Insomnia is used to test the routes and functionalities of the application. *(Please see the respective sections on _____ and Tests.)*
-
 The command-line application has the following **appearance**:
 [image]
 
