@@ -1,7 +1,7 @@
 {
   "name": "module-13-challenge-orm",
   "version": "1.0.0",
-  "description": "A command-line e-commerce application that utilizes object-relational mapping (ORM). The back end starter code is modified, and the working Express.js API is configured to use Sequelize to interact with a MySQL database.",
+  "description": "Unit 13,  Object-Relational Mapping (ORM) E-Commerce Back End Assignment",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
