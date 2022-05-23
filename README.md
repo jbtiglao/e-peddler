@@ -8,15 +8,13 @@ Unit 13,  Object-Relational Mapping (ORM) E-Commerce Back End Assignment
 
 ## Description 📌
 
-The goal of this project is to understand the fundamental structure of **e-commerce** platforms. E-commerce, otherwise known as internet retail, is the largest sector of the electronics insdustry, generating an estimated $29 trillion in 2019. E-commerce platforms like Shopify and WooCommerce provide a suite of services to businesses of all sizes. 
+The goal of this assignment is to understand the fundamental structure of e-commerce platforms. **E-commerce**, otherwise known as **internet retail**, is the largest sector of the electronics industry, generating an estimated $29 trillion in 2019. E-commerce platforms like Shopify and WooCommerce provide a suite of services to businesses of all sizes. 
 
-With the manager of an internet retail company in mind as an end-user, this application was developed as a back end for an e-commerce website that uses the latest technologies, which enables the user to compete with other e-commerce companies.
+With the manager of an internet retail company in mind as an end-user, this application was developed as a back end for an e-commerce website that uses the latest technologies and enables the user to compete with other e-commerce companies.
 
-Using object-relational mapping (ORM), this command-line e-commerce application has a back end starter code that is modified, while its working Express.js API is configured to use [Sequelize](https://sequelize.org/docs/v6/other-topics/upgrade/) as the ORM that interacts with the MySQL database. 
+Using object-relational mapping (ORM), this command-line e-commerce application has a back end starter code that is modified. Meanwhile, its working Express.js API is configured to use Sequelize as the ORM that interacts with the MySQL database. The MySQL database consists of tables for categories, products, tags, and product tags. RESTful API routes point to each standard Create, Read, Update, and Delete (CRUD) operation to make requests to and updates from the database.
 
-The MySQL database consists of tables for categories, products, tags, and product tags. RESTful API routes point to each standard [Create, Read, Update, and Delete (CRUD)](https://www.codecademy.com/article/what-is-crud) operations for each data group to make the requests and updates from the database, and establish associations between the entities. 
-
-Insomnia is used to test the routes and functionalities of the application.
+MySQL Workbench is used to ... while Insomnia is used to test the routes and functionalities of the application. *(Please see the respective sections on _____ and Tests.)*
 
 The command-line application has the following **appearance**:
 [image]
@@ -49,8 +47,11 @@ To access the **application files**, please see my [Github Repository](https://g
       * Create your  `.gitignore` and `.env` files.
       * Check the dependencies and dev dependencies needed on `package.json`. 
 
-  * [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages are needed to connect the Express.js API to a MySQL database, and the [dotenv](https://www.npmjs.com/package/dotenv) package to use environment variables to store sensitive data.
+  * Required dependencies
+      * [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages are needed to connect the Express.js API to a MySQL database.
   
+      *  The [dotenv](https://www.npmjs.com/package/dotenv) package's environment variables are used to store sensitive data like your MySQL username, password, and database name.
+
   * To set up all the existing npm packages, run `npm init`.
 
   * To install the dependencies on the `node_modules` folder, run `npm install` or
@@ -61,53 +62,22 @@ To access the **application files**, please see my [Github Repository](https://g
       * `npm i nodemon` to install Nodemon; and
       * `npm i dotenv` to install dotenv.
 
-  * Run `mysql -u root -p`. Enter your password when prompted.
+  * To create your database, run `mysql -u root -p`. Enter your password when prompted.  
 
-  * Create your models and routes, and seed your database.
+  * Use the `schema.sql` file in the `db` folder to create your database with the MySQL shell commands. 
   
-  * Use the `schema.sql` file in the `db` folder to create your database with MySQL shell commands. Use environment variables to store sensitive data like your MySQL username, password, and database name.
+      * Enter the following:
+    ```
+    DROP DATABASE IF EXISTS [database name];
 
-  * Your database should contain the following four models and requirements listed for each model:
+    CREATE DATABASE [database name];
+    ```
 
-    * `Category`
-
-        * `id`
-
-        * `category_name`
-
-    * `Product`
-
-        * `id`
-
-        * `product_name`
-
-        * `price`
-
-        * `stock`
-
-        * `category_id`
-
-    * `Tag`
-
-        * `id`
-
-        * `tag_name`
-
-    * `ProductTag`
-
-        * `id`
-
-        * `product_id`
-
-        * `tag_id`
-
-
-* Enter `npm run seed` to seed the database.
+  * To seed the database, enter `npm run seed`.
   
-* To invoke the application, run `npm start`. Your Sequelize models should sync to the MySQL database on server start.
+  * To invoke the application, run `npm start`. The Sequelize models syncs to the MySQL database on server start.
 
-* To test the application, use Insomnia (please see the Test section).
-
+  * To test the application, use Insomnia (please see the Test section).
   
   ---
 ## Usage 📌
@@ -150,11 +120,50 @@ For instructions on how to use the application, please see the demonstration vid
   ---
 ## Tests 📌
 
-  The following procedures are done to develop and test the application and its functionalities:
+  The following procedures are performed to develop and test the application and its functionalities:
 
 ### Starter Code 
 
- The API Routes to Perform RESTful CRUD Operations are filled out. This includes the unfinished routes in `product-routes.js`, `tag-routes.js`, and `category-routes.js` to perform create, read, update, and delete operations using your Sequelize models.
+ The API Routes to Perform RESTful CRUD Operations are filled out. This includes the unfinished routes in `product-routes.js`, `tag-routes.js`, and `category-routes.js` to perform create, read, update, and delete operations using Sequelize models.
+
+ ### Creating the database
+Models and routes are created. 
+
+To create the database, the `schema.sql` file in the `db` folder is run to create the database with the MySQL shell commands.
+
+The database contains the following four models and requirements listed for each model:
+
+    * `Category`
+
+        * `id`
+
+        * `category_name`
+
+    * `Product`
+
+        * `id`
+
+        * `product_name`
+
+        * `price`
+
+        * `stock`
+
+        * `category_id`
+
+    * `Tag`
+
+        * `id`
+
+        * `tag_name`
+
+    * `ProductTag`
+
+        * `id`
+
+        * `product_id`
+
+        * `tag_id`
 
 ### Seeding the Database
 
@@ -200,11 +209,10 @@ The code needed in `server.js` to sync the Sequelize models to the MySQL databas
   The following applications and resources were consulted and/or utilized in the development of this application:
   
   * UCI Boot Camp study materials, videos, and other resources on Object-Relational Mapping (ORM) and MySQL.
-  * Jeff Howell and Mike Scharf for the assignment walk-through videos. *(They are a big help, thank you!)*
   * [MySQL](https://dev.mysql.com/doc/)
   * [Sequelize](https://sequelize.org/docs/v6/category/core-concepts/)
   * [MySQL Workbench](https://www.mysql.com/products/workbench/)
-  * [Codecademy](https://www.codecademy.com/article/what-is-crud)
+  * [Codecademy](https://www.codecademy.com/article/what-is-crud) for the information on CRUD.
   * [npmjs.com](https://npmjs.com) packages and documentation on MySQL2, Sequelize, Nodemon, Express.js, and dotenv.
   * [Insomnia](https://insomnia.rest/)
  
