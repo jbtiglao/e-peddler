@@ -12,7 +12,7 @@ The goal of this assignment is to understand the fundamental structure of e-comm
 
 With the manager of an internet retail company in mind as an end-user, this application was developed as a back end for an e-commerce website that uses the latest technologies and enables the user to compete with other e-commerce companies.
 
-Using object-relational mapping (ORM), this command-line e-commerce application has a back end starter code that is modified. Meanwhile, its working Express.js API is configured to use Sequelize as the ORM that interacts with the MySQL database. The MySQL database consists of tables for categories, products, tags, and product tags. RESTful API routes point to each standard Create, Read, Update, and Delete (CRUD) operation to make requests to and updates from the database.
+Using object-relational mapping (ORM), this command-line e-commerce application has a back end starter code that is modified. Meanwhile, its working Express.js API is configured to use Sequelize as the ORM that interacts with the MySQL database. The MySQL database consists of tables for categories, products, tags, and product tags. RESTful API routes point to each standard Create, Read, Update, and Delete (CRUD) operation to make requests and updates on the database.
 
 The command-line application has the following **appearance**:
 [image]
@@ -64,14 +64,24 @@ To access the **application files**, please see my [Github Repository](https://g
 
   * Use the `schema.sql` file in the `db` folder to create your database with the MySQL shell commands. 
   
-      * Enter the following:
+      * To create the tables, enter the following:
     ```
     DROP DATABASE IF EXISTS [database name];
 
     CREATE DATABASE [database name];
     ```
 
+      * Or type `source db/schema.sql` on the terminal.
+
   * To seed the database, enter `npm run seed`.
+
+  * Use MySQL Workbench to confirm if the tables have been created and the database seeded.
+
+      * On MySQL Workbench, click the connection for the application.
+
+      * Click Schema then the application's database name, `ecommerce_db`. 
+
+      * Click the tables.
   
   * To invoke the application, run `npm start`. The Sequelize models syncs to the MySQL database on server start.
 
