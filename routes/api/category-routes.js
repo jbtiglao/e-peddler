@@ -31,7 +31,7 @@ router.get('/:id', (req, res) => {
         id: req.params.id
       },
       include: [{
-        model: Product
+        model: Product,
       }]
     })
     .then(data => {
@@ -40,6 +40,7 @@ router.get('/:id', (req, res) => {
     .catch(err => {
       console.log(err);
       res.status(400).json(err);
+
     });
 });
 
