@@ -12,7 +12,7 @@ The goal of this assignment is to understand the fundamental structure of e-comm
 
 With the manager of an internet retail company in mind as an end-user, this application was developed as a back end for an e-commerce website that uses the latest technologies and enables the user to compete with other e-commerce companies.
 
-Using object-relational mapping (ORM), this command-line e-commerce application has a back end starter code that is modified. Meanwhile, its working Express.js API is configured to use Sequelize as the ORM that interacts with the MySQL database. The MySQL database consists of tables for categories, products, tags, and product tags. RESTful API routes point to each standard Create, Read, Update, and Delete (CRUD) operation to make requests and updates on the database.
+Using object-relational mapping (ORM), this command-line e-commerce application has a back end starter code that is modified. Meanwhile, its working Express.js API is configured to use Sequelize as the ORM that interacts with the MySQL database. The MySQL database consists of tables for categories, products, tags, and product tags. RESTful API routes point to each standard Create, Read, Update, and Delete (CRUD) operation to make requests on the database.
 
 The command-line application has the following **appearance**:
 [image]
@@ -38,15 +38,15 @@ To access the **application files**, please see my [Github Repository](https://g
   
   ---
 ## Installation 📌
-  * Clone my repository on GitHub.
+  * Clone my [repository](https://github.com/jbtiglao/e-peddler) on GitHub.
 
   * On Visual Studio Code:
       * Open the cloned file. 
       * Create your  `.gitignore` and `.env` files.
-      * Check the dependencies and dev dependencies needed on `package.json`. 
+      * Check the `dependencies` and `dev dependencies` needed on `package.json`. 
 
   * Required dependencies
-      * [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages are needed to connect the Express.js API to a MySQL database.
+      * [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages are needed to connect the [Express.js](https://expressjs.com/) [API](https://expressjs.com/en/5x/api.html) to a MySQL database.
   
       *  The [dotenv](https://www.npmjs.com/package/dotenv) package's environment variables are used to store sensitive data like your MySQL username, password, and database name.
 
@@ -66,31 +66,31 @@ To access the **application files**, please see my [Github Repository](https://g
   
       * To create the tables, enter the following:
     ```
-    DROP DATABASE IF EXISTS [database name];
+    DROP DATABASE IF EXISTS ecommerce_db;
 
-    CREATE DATABASE [database name];
+    CREATE DATABASE ecommerce_db;
     ```
 
       * Or type `source db/schema.sql` on the terminal.
 
   * To seed the database, enter `npm run seed`.
 
-  * Use MySQL Workbench to confirm if the tables have been created and the database seeded.
+  * Use MySQL Workbench to confirm if the tables have been created and the database has been seeded.
 
       * On MySQL Workbench, click the connection for the application.
 
-      * Click Schema then the application's database name, `ecommerce_db`. 
+      * Click Schemas then the application's database name, `ecommerce_db`. 
 
       * Click the tables.
   
-  * To invoke the application, run `npm start`. The Sequelize models syncs to the MySQL database on server start.
+  * To invoke the application, run `npm start`. The Sequelize models sync to the MySQL database on server start.
 
   * To test the application, use Insomnia (please see the Test section).
   
   ---
 ## Usage 📌
 
-For instructions on how to use the application, please see the demonstration video, as well as the description and features and functionalities sections.
+For instructions on how to use the application, please see the demonstration video, as well as the description and the features and functionalities sections.
 
 ### Features and Functionalities  🔌
 
@@ -137,45 +137,47 @@ For instructions on how to use the application, please see the demonstration vid
  ### Creating the database
 Models and routes are created. 
 
-To create the database, the `schema.sql` file in the `db` folder is run to create the database with the MySQL shell commands.
-
-The database contains the following four models and requirements listed for each model:
-
-    * `Category`
-
-        * `id`
-
-        * `category_name`
-
-    * `Product`
-
-        * `id`
-
-        * `product_name`
-
-        * `price`
-
-        * `stock`
-
-        * `category_id`
-
-    * `Tag`
-
-        * `id`
-
-        * `tag_name`
-
-    * `ProductTag`
-
-        * `id`
-
-        * `product_id`
-
-        * `tag_id`
+The `schema.sql` file in the `db` folder is run to create the database with the MySQL shell commands.
 
 ### Seeding the Database
 
 After creating the models and routes, `npm run seed` is invoked to seed data so the routes can be tested.
+
+The database contains the following four models and requirements listed for each model:
+
+* `Category`
+
+    * `id`
+
+    * `category_name`
+
+* `Product`
+
+    * `id`
+
+    * `product_name`
+
+    * `price`
+
+    * `stock`
+
+    * `category_id`
+
+* `Tag`
+
+    * `id`
+
+    * `tag_name`
+
+* `ProductTag`
+
+    * `id`
+
+    * `product_id`
+
+    * `tag_id`
+
+MySQL Workbench is used to confirm the tables have been created and the database seeded.
 
 ### Sync Sequelize to the Database on Server Start
 
@@ -193,7 +195,9 @@ The code needed in `server.js` to sync the Sequelize models to the MySQL databas
 
 ### Insomnia and Testing RESTful API Routes
 
-  Insomnia is used to test the application's `GET`, `POST`, `PUT`, and `DELETE` routes.  Please see the walk-through demonstration videos as well as the sections on Description and Usage to see how the routes and data are tested using Insomnia. 
+  Insomnia is used to test the application's `GET`, `POST`, `PUT`, and `DELETE` routes.  
+  
+  Please see the walk-through demonstration videos as well as the sections on Description and Usage to see how the routes and data area created and tested using Insomnia. 
   
   1. The following GET routes are tested to return:
         * `GET Categories` - all categories;
