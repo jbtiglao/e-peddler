@@ -4,7 +4,7 @@ Unit 13,  Object-Relational Mapping (ORM) E-Commerce Back End Assignment
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[This is a working draft - assignment not yet submitted]
+---
 
 ## Description 📌
 
@@ -12,12 +12,16 @@ The goal of this assignment is to understand the fundamental structure of e-comm
 
 With the manager of an internet retail company in mind as an end-user, this application was developed as a back end for an e-commerce website that uses the latest technologies and enables the user to compete with other e-commerce companies.
 
-Using object-relational mapping (ORM), this command-line e-commerce application has a back end starter code that is modified. Meanwhile, its working Express.js API is configured to use Sequelize as the ORM that interacts with the MySQL database. The MySQL database consists of tables for categories, products, tags, and product tags. RESTful API routes point to each standard Create, Read, Update, and Delete (CRUD) operation to make requests on the database.
+Using object-relational mapping (ORM), this e-commerce application has a back end starter code that is modified. Meanwhile, its working Express.js API is configured to use Sequelize as the ORM that interacts with the MySQL database, which in turn consists of tables for categories, products, tags, and product tags. RESTful API routes point to each standard Create, Read, Update, and Delete (CRUD) operation to make requests on the database.
 
-The command-line application has the following **appearance**:
+This back end application has the following **appearance** when tested on Insomnia:
 [image]
 
-To show the features and functionalities of the application, a **walk-through demonstration video** can be accessed [here](link).
+The **walk-through video** demonstrating the functionality of the application can be accessed through the following links:
+* [Part 1, Installation and Database Creation](https://drive.google.com/file/d/1OMMFU6NjJRelQbXUzGeM6lnBEJTu4JGc/view?usp=sharing).
+* [Part 2, Categories](https://drive.google.com/file/d/1yiFSZZa-rqInblx6gxC-S1woYE9JlzUp/view?usp=sharing)
+* [Part 3, Products](https://drive.google.com/file/d/1K6LdPLvW9PLAHK71kVa-XOFGoSRkjffW/view?usp=sharing)
+* [Part 4, Tags](https://drive.google.com/file/d/1AfgRf-PuhYt1AlOiq1Y--YQ8sghUT3Qh/view?usp=sharing)
 
 To access the **application files**, please see my [Github Repository](https://github.com/jbtiglao/e-peddler).
 
@@ -60,18 +64,10 @@ To access the **application files**, please see my [Github Repository](https://g
       * `npm i nodemon` to install Nodemon; and
       * `npm i dotenv` to install dotenv.
 
-  * To create your database, run `mysql -u root -p`. Enter your password when prompted.  
-
-  * Use the `schema.sql` file in the `db` folder to create your database with the MySQL shell commands. 
-  
-      * To create the tables, enter the following:
-    ```
-    DROP DATABASE IF EXISTS ecommerce_db;
-
-    CREATE DATABASE ecommerce_db;
-    ```
-
-      * Or type `source db/schema.sql` on the terminal.
+  * To create your database:
+      * Run `mysql -u root -p`. Enter your password when prompted.  
+      
+      * Enter `source db/schema.sql` on the terminal.
 
   * To seed the database, enter `npm run seed`.
 
@@ -96,13 +92,52 @@ For instructions on how to use the application, please see the demonstration vid
 
   1. Given a functional Express.js API, when the user adds his/her database name, MySQL username, and MySQL password to an environment variable file, the user is able to connect to a database using Sequelize.
 
-  2. When the user enters the schema and seed commands, a development database is created and is seeded with test data.
+  2. When the user enters the schema and seed commands, a development database is created and is seeded with test data. 
+  
+      The database contains the following four models and requirements listed for each model:
+
+      * `Category`
+
+        * `id`
+
+        * `category_name`
+
+      * `Product`
+
+        * `id`
+
+        * `product_name`
+
+        * `price`
+
+        * `stock`
+
+        * `category_id`
+
+      * `Tag`
+
+        * `id`
+
+        * `tag_name`
+
+      * `ProductTag`
+
+        * `id`
+
+        * `product_id`
+
+        * `tag_id`
+
 
   3. When the user enters the command to invoke the application, the server is started and the Sequelize models are synced to the MySQL database.
-
+  
   4. When the user opens API GET routes in Insomnia for categories, products, or tags, the data for each of these routes is displayed in a formatted JSON.
 
-  5. When the  user tests API POST, PUT, and DELETE routes in Insomnia, the user is able to successfully create, update, and delete data in the database.
+      * When the user clicks the GET request for all categories, products or tags, the user is presented with all the categories, products, or tags.
+
+      * When the user clicks the GET request for a single category, product, or tag and the user enters the category, product, or tag id, the user is presented with the category, product, or tag bearing the said id.
+
+  5. When the  user tests API POST, PUT, and DELETE routes in Insomnia, the user is able to successfully create, update, and delete a category, product, or tag in the database.
 
 --- 
 ## Technologies 📌
@@ -143,40 +178,6 @@ The `schema.sql` file in the `db` folder is run to create the database with the 
 
 After creating the models and routes, `npm run seed` is invoked to seed data so the routes can be tested.
 
-The database contains the following four models and requirements listed for each model:
-
-* `Category`
-
-    * `id`
-
-    * `category_name`
-
-* `Product`
-
-    * `id`
-
-    * `product_name`
-
-    * `price`
-
-    * `stock`
-
-    * `category_id`
-
-* `Tag`
-
-    * `id`
-
-    * `tag_name`
-
-* `ProductTag`
-
-    * `id`
-
-    * `product_id`
-
-    * `tag_id`
-
 MySQL Workbench is used to confirm the tables have been created and the database seeded.
 
 ### Sync Sequelize to the Database on Server Start
@@ -197,24 +198,30 @@ The code needed in `server.js` to sync the Sequelize models to the MySQL databas
 
   Insomnia is used to test the application's `GET`, `POST`, `PUT`, and `DELETE` routes.  
   
-  Please see the walk-through demonstration videos as well as the sections on Description and Usage to see how the routes and data area created and tested using Insomnia. 
+  Please see the walk-through demonstration videos as well as the sections on Description and Usage to see how the routes and data are created and tested using Insomnia. 
   
   1. The following GET routes are tested to return:
-        * `GET Categories` - all categories;
+        * `GET All Categories` - all categories;
         * `GET All Products` - all products; and
         * `GET tags` - all tags.
   
   2. The following GET routes are tested to return:
-        * `GET Category by ID` - a single category;
-        * `GET One Product` - a single product; and
-        * `GET tag by id` - a single tag.
+        * `GET a Category by Id` - a single category;
+        * `GET a Product by Id` - a single product; and
+        * `GET a Tag by Id` - a single tag.
 
-  3. These routes are tested to do the following:
-        * `POST` - `CREATE Category`;
-        * `PUT` - `UPDATE Category`; and
-        * `DELETE` - `DELETE Category`.
-        
-  4. `POST`, `PUT`, and `DELETE` routes for products and tags are also tested.
+  3. These POST, PUT, and DELETE routes are tested to do the following:
+        * `POST Create a Category` - create or add a new category;
+        * `POST Create a Product` - create or add a new product;
+        * `POST Create a Tag` - create or add a new tag;
+
+        * `PUT Update a Category`- update a category; 
+        * `PUT Update a Product` - update a product;
+        * `PUT Update a Tag` - update a tag;
+
+        * `DELETE a Category` - remove a category;
+        * `DELETE a Product` = remove a product; and
+        * `DELETE a Tag` - remove a tag.
 
   ---
   ## Credits 📌
@@ -227,6 +234,7 @@ The code needed in `server.js` to sync the Sequelize models to the MySQL databas
   * [Codecademy](https://www.codecademy.com/article/what-is-crud) for the information on CRUD.
   * [npmjs.com](https://npmjs.com) packages and documentation on MySQL2, Sequelize, Nodemon, Express.js, and dotenv.
   * [Insomnia](https://insomnia.rest/)
+  * [Screencastify](https://www.screencastify.com/)
  
   ---
   ## Author 📌
