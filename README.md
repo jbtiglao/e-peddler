@@ -330,7 +330,7 @@ For instructions on how to use the application, please see the demonstration vid
 
   <img width="1399" alt="image39_delete-category3" src="https://user-images.githubusercontent.com/94569484/170674242-a9a5234c-182b-4ba1-b125-b60479fb5d35.png">
 
-  * `DELETE a Product` = remove a product; and
+  * `DELETE a Product` - remove a product; and
         
   <img width="1395" alt="image40_delete-product" src="https://user-images.githubusercontent.com/94569484/170674447-2fcad0fc-17e4-430e-8163-782e95aec9f5.png">
 
