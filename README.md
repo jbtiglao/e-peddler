@@ -62,7 +62,7 @@ After creating the models and routes, `npm run seed` is invoked to seed data so 
 
 MySQL Workbench is used to confirm the tables have been created and the database seeded.
 
-**Sync Sequelize to the Database on Server Start**
+**Syncing Sequelize to the Database on Server Start**
 
 The code needed in `server.js` to sync the Sequelize models to the MySQL database on server start is created.
 
