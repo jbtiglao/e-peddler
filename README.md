@@ -46,13 +46,14 @@ To access the **application files**, please see my [Github Repository](https://g
   ---
 ## Installation 📌
 
-### Pre-Installation and Coding Requirements 🔌
+### Pre-Installation and Meeting the Coding Requirements 🔌
 
 **Starter Code**
 
  The API Routes to Perform RESTful CRUD Operations are filled out. This includes the unfinished routes in `product-routes.js`, `tag-routes.js`, and `category-routes.js` to perform create, read, update, and delete operations using Sequelize models.
 
 **Creating and Seeding the Database**
+
 Models and routes are created. 
 
 The `schema.sql` file in the `db` folder is run to create the database with the MySQL shell commands.
