@@ -339,7 +339,7 @@ For instructions on how to use the application, please see the demonstration vid
   <img width="1406" alt="image38_delete-category2" src="https://user-images.githubusercontent.com/94569484/170674080-b79c8eb0-a0a9-4b17-8a2d-b4ac2a0be440.png">
 
 
-  *Category `Cardigans` with Id number `6` has been deleted from `categories`.
+  *Category `Cardigans` with Id number `6` has been deleted from `categories`.*
 
   <img width="1399" alt="image39_delete-category3" src="https://user-images.githubusercontent.com/94569484/170674242-a9a5234c-182b-4ba1-b125-b60479fb5d35.png">
 
@@ -351,7 +351,7 @@ For instructions on how to use the application, please see the demonstration vid
   <img width="1395" alt="image40_delete-product" src="https://user-images.githubusercontent.com/94569484/170674447-2fcad0fc-17e4-430e-8163-782e95aec9f5.png">
 
 
-*Product `Knitted Scarves` with Id number 6 is now deleted from `products`.
+*Product `Knitted Scarves` with Id number 6 is now deleted from `products`.*
 
 <img width="1405" alt="image43_delete-product3" src="https://user-images.githubusercontent.com/94569484/170802326-6d92c2ac-4bbc-41fb-9b63-d957375a3dfd.png">
 
