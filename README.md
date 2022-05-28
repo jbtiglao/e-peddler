@@ -287,8 +287,6 @@ For instructions on how to use the application, please see the demonstration vid
 
     
   * `POST Create a Tag` - create or add a new tag;
-      
-    
     
   <img width="1395" alt="image28_post-tag" src="https://user-images.githubusercontent.com/94569484/170669080-1ea5bdc3-7e64-4678-b26f-696085187377.png">
       
@@ -313,7 +311,7 @@ For instructions on how to use the application, please see the demonstration vid
 
   * `PUT Update a Tag` - update a tag;
         
-  <img width="1398" alt="image34_put-tag1" src="https://user-images.githubusercontent.com/94569484170672902-481414f7-778e-4321-8004-bb1010100afd.png">
+<img width="1398" alt="image34_put-tag1" src="https://user-images.githubusercontent.com/94569484/170802118-ba6cacef-6cd5-442b-8e30-955550613354.png">
 
   <img width="1395" alt="image35_put-tag2" src="https://user-images.githubusercontent.com/94569484/170673146-15a0e611-4f70-4a76-947a-f998419649e7.png">
 
@@ -331,12 +329,20 @@ For instructions on how to use the application, please see the demonstration vid
   <img width="1399" alt="image39_delete-category3" src="https://user-images.githubusercontent.com/94569484/170674242-a9a5234c-182b-4ba1-b125-b60479fb5d35.png">
 
   * `DELETE a Product` - remove a product; and
+
+<img width="1405" alt="image42_delete-product2" src="https://user-images.githubusercontent.com/94569484/170802315-a51adc5d-a2ec-4b13-a917-d0356c8fcb60.png">
+
         
   <img width="1395" alt="image40_delete-product" src="https://user-images.githubusercontent.com/94569484/170674447-2fcad0fc-17e4-430e-8163-782e95aec9f5.png">
+  
+<img width="1405" alt="image43_delete-product3" src="https://user-images.githubusercontent.com/94569484/170802326-6d92c2ac-4bbc-41fb-9b63-d957375a3dfd.png">
+
 
   * `DELETE a Tag` - remove a tag.
         
   <img width="1399" alt="image41_delete-tag" src="https://user-images.githubusercontent.com/94569484/170674653-4f766adb-d370-4d54-88b1-e506063c602b.png">
+  
+  <img width="1408" alt="image44_delete-tag2" src="https://user-images.githubusercontent.com/94569484/170802360-c2ab9ebb-3201-492b-b305-5aa1bbe0f2ef.png">
 
 
   ---
