@@ -258,17 +258,17 @@ For instructions on how to use the application, please see the demonstration vid
   
   * The `Get By Id` request allows a user to get a single category, product, or tag by Id. The following `GET By Id` requests are created and tested to return:
     
-  * `GET a Category by Id` - a single category assigned the Id or tag Id;
+  * `GET a Category by Id` - the category assigned the Id or tag Id;
         
   <img width="1401" alt="image20_get-category-by-id" src="https://user-images.githubusercontent.com/94569484/170667245-a721ea10-14ac-4aa1-9ab2-801ca80d053f.png">
 
         
-  * `GET a Product by Id` - a single product assigned the Id or tag Id; and
+  * `GET a Product by Id` - the product assigned the Id or tag Id; and
         
   <img width="1397" alt="image23_get-product-by-id" src="https://user-images.githubusercontent.com/94569484/170667708-f478fbd5-0b64-44d8-bf2a-de5e8dfd98d3.png">
 
         
-  * `GET a Tag by Id` - a single tag assigned the Id or tag Id.
+  * `GET a Tag by Id` - the tag assigned the Id or tag Id.
         
   <img width="1400" alt="image24_get-tag-by-id" src="https://user-images.githubusercontent.com/94569484/170667869-295e719b-5def-47c3-adcb-77a05a8263ca.png">
 
