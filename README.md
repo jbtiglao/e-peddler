@@ -21,7 +21,7 @@ This back end application has the following **appearance** when tested on Insomn
 
 
 To see how the functionalities of the application work using Insomnia, access the **walk-through videos** here:
-* [Part 1, Installation and Database Creation](https://drive.google.com/file/d/1OMMFU6NjJRelQbXUzGeM6lnBEJTu4JGc/view?usp=sharing).
+* [Part 1, Installation and Database Creation](https://drive.google.com/file/d/1OMMFU6NjJRelQbXUzGeM6lnBEJTu4JGc/view?usp=sharing)
 * [Part 2, Categories](https://drive.google.com/file/d/1yiFSZZa-rqInblx6gxC-S1woYE9JlzUp/view?usp=sharing)
 * [Part 3, Products](https://drive.google.com/file/d/1K6LdPLvW9PLAHK71kVa-XOFGoSRkjffW/view?usp=sharing)
 * [Part 4, Tags](https://drive.google.com/file/d/1AfgRf-PuhYt1AlOiq1Y--YQ8sghUT3Qh/view?usp=sharing)
@@ -194,7 +194,7 @@ For instructions on how to use the application, please see the demonstration vid
 
 <img width="1395" alt="image6_get-all-products" src="https://user-images.githubusercontent.com/94569484/170665800-557c77b8-547d-43da-b6d2-f3da72c3a4ce.png">
 
-  * When the user clicks the GET request for a **single** category, product, or tag and the user enters the category, product, or tag id, the user is presented with the category, product, or tag bearing the said id.
+  * When the user clicks the GET request for a **single** category, product, or tag and the user enters the category, product, or tag Id, the user is presented with the category, product, or tag bearing the said Id.
       
   <img width="1400" alt="image7_get-category-by-id" src="https://user-images.githubusercontent.com/94569484/170665846-8187d2e4-a029-425b-9bb3-9f543a3fa3d6.png">
 
@@ -250,24 +250,24 @@ For instructions on how to use the application, please see the demonstration vid
         
   <img width="1395" alt="image21_get-all-products" src="https://user-images.githubusercontent.com/94569484/170667389-70c32672-c8f3-4440-b3cc-f9db54d4166b.png">
 
-  * `GET tags` - all tags.
+  * `GET All Tags` - all tags.
         
   <img width="1397" alt="image22_get-all-tags" src="https://user-images.githubusercontent.com/94569484/170667543-7bd4433d-8ba4-4d9e-9c85-8edb943db13b.png">
 
   
-  * The `Get By ID` request allows a user to get a single category, product, or tag by id. The following `GET By Id` requests are created and tested to return:
+  * The `Get By Id` request allows a user to get a single category, product, or tag by Id. The following `GET By Id` requests are created and tested to return:
     
-  * `GET a Category by Id` - a single category assigned the id or tag id;
+  * `GET a Category by Id` - a single category assigned the Id or tag Id;
         
   <img width="1401" alt="image20_get-category-by-id" src="https://user-images.githubusercontent.com/94569484/170667245-a721ea10-14ac-4aa1-9ab2-801ca80d053f.png">
 
         
-  * `GET a Product by Id` - a single product assigned the id or tag id; and
+  * `GET a Product by Id` - a single product assigned the Id or tag Id; and
         
   <img width="1397" alt="image23_get-product-by-id" src="https://user-images.githubusercontent.com/94569484/170667708-f478fbd5-0b64-44d8-bf2a-de5e8dfd98d3.png">
 
         
-  * `GET a Tag by Id` - a single tag assigned the id or tag id.
+  * `GET a Tag by Id` - a single tag assigned the Id or tag Id.
         
   <img width="1400" alt="image24_get-tag-by-id" src="https://user-images.githubusercontent.com/94569484/170667869-295e719b-5def-47c3-adcb-77a05a8263ca.png">
 
@@ -299,13 +299,19 @@ For instructions on how to use the application, please see the demonstration vid
 
   <img width="1400" alt="image30_put-category2" src="https://user-images.githubusercontent.com/94569484/170670802-fd2bab24-82dd-427b-b7bc-9bdc88bc42c3.png">
 
+
+  *Category `Pants` with Id number `10` is updated to `Cardigans`.*
+
   <img width="1400" alt="image31_put-category3" src="https://user-images.githubusercontent.com/94569484/170671116-10316597-b1d5-4118-ac44-ed8956daa529.png">
 
 
   * `PUT Update a Product` - update a product; and
         
   <img width="1396" alt="image32_put-product1" src="https://user-images.githubusercontent.com/94569484/170671661-3cff8aae-4529-4b5e-8ed1-0a5e5edcb5aa.png">
-        
+
+
+  *Product `Scarves` with Id number `6` is updated to `Knitted Scarves`.*
+
   <img width="1396" alt="image33_put-product3" src="https://user-images.githubusercontent.com/94569484/170672325-912d4d24-11db-46a0-8dcb-dc20b6df5114.png">
 
 
@@ -313,18 +319,26 @@ For instructions on how to use the application, please see the demonstration vid
         
 <img width="1398" alt="image34_put-tag1" src="https://user-images.githubusercontent.com/94569484/170802118-ba6cacef-6cd5-442b-8e30-955550613354.png">
 
+
   <img width="1395" alt="image35_put-tag2" src="https://user-images.githubusercontent.com/94569484/170673146-15a0e611-4f70-4a76-947a-f998419649e7.png">
+
+
+  *Tag name `black` with Id number `10` is updated to `Not Today Patriarchy`.*
 
   <img width="1398" alt="image36_put-tag3" src="https://user-images.githubusercontent.com/94569484/170673333-3476316b-285d-4efd-9af3-ca406956cc52.png">
 
 
-  5. **`POST` Request** - allows a user to remove a category, product, or tag. The follwoing `POST` requests are created and tested to return:
+  5. **`DELETE` Request** - allows a user to remove a category, product, or tag. The follwoing `POST` requests are created and tested to return:
   
   * `DELETE a Category` - remove a category;
 
   <img width="1399" alt="image37_delete-category" src="https://user-images.githubusercontent.com/94569484/170673685-4a7da0f5-8856-4004-8351-234b5df20589.png">
 
+
   <img width="1406" alt="image38_delete-category2" src="https://user-images.githubusercontent.com/94569484/170674080-b79c8eb0-a0a9-4b17-8a2d-b4ac2a0be440.png">
+
+
+  *Category `Cardigans` with Id number `6` has been deleted from `categories`.
 
   <img width="1399" alt="image39_delete-category3" src="https://user-images.githubusercontent.com/94569484/170674242-a9a5234c-182b-4ba1-b125-b60479fb5d35.png">
 
@@ -334,7 +348,10 @@ For instructions on how to use the application, please see the demonstration vid
 
         
   <img width="1395" alt="image40_delete-product" src="https://user-images.githubusercontent.com/94569484/170674447-2fcad0fc-17e4-430e-8163-782e95aec9f5.png">
-  
+
+
+*Product `Knitted Scarves` with Id number 6 is now deleted from `products`.
+
 <img width="1405" alt="image43_delete-product3" src="https://user-images.githubusercontent.com/94569484/170802326-6d92c2ac-4bbc-41fb-9b63-d957375a3dfd.png">
 
 
@@ -342,6 +359,7 @@ For instructions on how to use the application, please see the demonstration vid
         
   <img width="1399" alt="image41_delete-tag" src="https://user-images.githubusercontent.com/94569484/170674653-4f766adb-d370-4d54-88b1-e506063c602b.png">
   
+  *Tag `teal` with Id number `11` is deleted from `tags`.*
   <img width="1408" alt="image44_delete-tag2" src="https://user-images.githubusercontent.com/94569484/170802360-c2ab9ebb-3201-492b-b305-5aa1bbe0f2ef.png">
 
 
@@ -350,6 +368,8 @@ For instructions on how to use the application, please see the demonstration vid
   The following applications and resources were consulted and/or utilized in the development of this application:
   
   * UCI Boot Camp study materials, videos, and other resources on Object-Relational Mapping (ORM) and MySQL.
+  * Jeff Howell and Mike Scharf for the homework walk-through videos. *Thanks for putting them together and sharing them in the meeting room. Thank you!*
+  * The grader for my last assignment. *Thank you for reviewing my work. I appreciate the comments and the encouragement!*
   * [MySQL](https://dev.mysql.com/doc/)
   * [Sequelize](https://sequelize.org/docs/v6/category/core-concepts/)
   * [MySQL Workbench](https://www.mysql.com/products/workbench/)
