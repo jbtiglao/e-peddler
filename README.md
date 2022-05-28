@@ -211,6 +211,7 @@ For instructions on how to use the application, please see the demonstration vid
   * Nodemon
   * Express.js
   * Insomnia
+  * MySQL Workbench
 
   ---
  ## License 📌
