@@ -351,7 +351,7 @@ For instructions on how to use the application, please see the demonstration vid
   <img width="1395" alt="image40_delete-product" src="https://user-images.githubusercontent.com/94569484/170674447-2fcad0fc-17e4-430e-8163-782e95aec9f5.png">
 
 
-*Product `Knitted Scarves` with Id number 6 is now deleted from `products`.*
+*Product `Knitted Scarves` with Id number `6` is now deleted from `products`.*
 
 <img width="1405" alt="image43_delete-product3" src="https://user-images.githubusercontent.com/94569484/170802326-6d92c2ac-4bbc-41fb-9b63-d957375a3dfd.png">
 
